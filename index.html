@@ -44,6 +44,7 @@
     <section class="hero bg-hero">
       <h1 class="hero-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
       <button data-modal-open class="button-primary" type="button">Solicite nuestro servicio</button>
+     
       <!-- ventana modal -->
       <div data-modal class="backdrop is-hidden" >
 
@@ -56,42 +57,55 @@
           <h2 class="text-form">Deje sus datos, nos contactaremos con usted</h2>
 
           <form>
-            <label>
+            <label class="label">
               Nombre
-              <input type="text" name="name" id="name" >
-          </label>
+              <div class="modal-input">
+                <input class="modal-form-input" type="text" name="name" id="name">
+                <svg class="modal-svg-icon" width="16" height="16"> 
+                  <use
+                    href="./images/sprite SVG/icons.svg#icon-username">
+                  </use>
+                </svg>              
+              </div>
+            </label>
 
-            <label>
+            <label class="label">
               Teléfono
-            <input type="tel" name="teléfono" id="teléfono" />
+            <div class="modal-input">
+              <input class="modal-form-input" type="tel" name="teléfono" id="teléfono"/>
+              <svg class="modal-svg-icon" width="16" height="16"> 
+                <use
+                  href="./images/sprite SVG/icons.svg#icon-cel">
+                </use>
+              </svg>                       
+           </div>
           </label>
 
-            <label>
+            <label class="label">
               E-mail
-            <input type="email" name="email" id="email" />
+            <div class="modal-input">
+              <input class="modal-form-input" type="email" name="email" id="email"/>
+              <svg class="modal-svg-icon" width="16" height="16"> 
+                <use
+                  href="./images/sprite SVG/icons.svg#icon-email">
+                </use>
+              </svg>       
+          </div>         
           </label>
           
-            <label>
+            <label class="label">
               Comentarios
-              <textarea name="feedback" id="feedback" rows="5" placeholder="Introduzca el texto"></textarea>
+              <textarea class="comments-modal" name="feedback" id="feedback" rows="5" placeholder="Introduzca el texto"></textarea>
             </label>
 
             <label class="checkbox">
-              <input type="checkbox" name="hobby" value="music"/>
+              <input class="input-checkbox" type="checkbox" name="hobby" value="music"/>
               Estoy de acuerdo con el boletín informativo y acepto los <br> Términos y Condiciones
           </label>
 
             <button class="button-form" type="submit">Enviar</button>
-          
-      
           </form>
-<!--           
-          <form>
-            
-            <input type="text" name="nombres" id="nombres" placeholder="ingrese su Nombre">
-            <input type="email" name="nombres" id="nombres" placeholder="ingrese su Nombre">
-            <input type="text" name="nombres" id="nombres" placeholder="ingrese su Nombre">
-          </form> -->
+        
         </div>
 
       </div>
