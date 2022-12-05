@@ -307,11 +307,16 @@ line-height: 14px;
 color: rgba(117, 117, 117, 0.5);
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+resize: none;
 }
 .comments-modal:hover, .modal-form-input:focus {
   border: 1px solid var(--accent-color);
   cursor: pointer;
  }
+
+::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
 
 .checkbox {
 display: flex;
@@ -670,7 +675,7 @@ footer .container address .contact:hover {
   width: 206px;
   height: 80px;
   left: 516px;
-  top: 2899px;
+  top: 2872px;
 }
 
 .container .footer-icons .icons {
@@ -693,7 +698,7 @@ fill: #ffffff;
 }
 footer .paragraph-footer {
 position: absolute;
-top: 2888px;
+top: 2860px;
 right: 930px;
 font-weight: 700;
 font-size: 14px;
@@ -720,7 +725,7 @@ color: #ffffff;
 
 footer .paragraph-footer-two {
   position: absolute;
-  top: 1781px;
+  top: 1782px;
   right: 930px;
   font-weight: 700;
   font-size: 14px;
@@ -741,10 +746,10 @@ footer .paragraph-footer-two {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #ffffff;
-  gap: 20px;
+  gap: 17px;
   position: absolute;
   left: 815px;
-  top: 2880px;
+  top: 2861px;
   }
 
  .input-footer {
@@ -755,8 +760,7 @@ footer .paragraph-footer-two {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 16px 15px;
-  position: relative;
-  
+  position: relative; 
  }
 
   .button-form-footer {
@@ -765,11 +769,12 @@ footer .paragraph-footer-two {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
+  padding-right: 39px;
   position: absolute;
   width: 200px;
   height: 50px;
   left: 1185px;
-  top: 2916px;
+  top: 2894px;
   border: none;
   outline: none;
   border-radius: 4px;
@@ -780,3 +785,54 @@ footer .paragraph-footer-two {
   background-color:#188CE8;;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   } 
+
+  .icon-message {
+  position: absolute;
+  top: 2907px;
+  left: 1330px;
+  }
+
+  /* portafolio */
+
+  .footer-label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    gap: 20px;
+    position: absolute;
+    left: 815px;
+    top: 1780px;
+    }
+
+  .button-footer-form {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    padding-right: 39px;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 1185px;
+    top: 1816px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    .button-form-footer:hover,
+    .button-form-footer:focus {
+    background-color:#188CE8;;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    } 
+  
+    .message-icon {
+    position: absolute;
+    top: 1828px;
+    left: 1330px;
+    }
